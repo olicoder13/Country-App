@@ -1,0 +1,118 @@
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #084cb6;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img{
+  width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+.contenido-principal{
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #FF6500;
+}
+.contenido-principal h1{
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+form{
+  margin-bottom: 20px;
+}
+form input{
+  border: 1px solid gold;
+  outline: none;
+  padding: 10px 20px;
+  margin-right: 5px;
+  border-radius: 15px;
+}
+form button{
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background-color: #50ff75;
+  color: #000;
+  font-weight: bold;
+}
+
+.card{
+  border-radius: 15px;
+  padding: 30px;
+  background-color: hsl(87, 100%, 80%);
+  color: black;
+  margin-bottom: 20px;
+  border: 5px solid #084cb6;
+  position: relative;
+}
+
+.info{
+  color: #084cb6;
+  margin-top: 20px;
+}
+.info h2{
+  font-size: 20px;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  color: #fbfafa;
+  background-color: rgb(53, 197, 55);
+  width: 150px;
+  text-align: center;
+}
+
+table{
+  width: 100%;
+}
+table, tr, td, th{
+  border: 1px solid #102747;
+}
+
+@media (min-width: 480px) {
+  .contenedor-principal{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  
+
+  .card{
+    margin-bottom: 0px;
+  }
+
+  form input{
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body{
+    display: flex;
+    justify-content: center;
+  }
+  .contenedor-principal{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
